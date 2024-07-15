@@ -1,0 +1,20 @@
+﻿@model List<Compilador_de_Bugs.Models.Message>
+
+@if (Model != null && Model.Count > 0)
+{
+    <h3>Mensagem Recebida</h3>
+    <ul>
+        @foreach (var msg in Model)
+        {
+            <li>
+                <p><strong>Nome: </strong>@msg.Nome</p>
+                <p><strong>Sobrenome:   </strong>@msg.Sobrenome</p>
+                <p><strong>Telefone:   </strong>@msg.Phone</p>
+                <p><strong>Email:   </strong>@msg.Email</p>
+                <p><strong>Mensagem:   </strong>@msg.Content</p>
+
+            </li>
+        }
+    </ul>
+
+}
